@@ -23,7 +23,7 @@ We provide five baselines in this code. They can be configured via the '--settin
 - Embed-SMOTE: Perform SMOTE in the intermediate embedding domain. '--setting='embed_up''
 
 ### Architectures
-We provide two base architectures, GCN and GraphSage. The default one is GraphSage, and can be set via setting '--model'.
+We provide two base architectures, GCN and GraphSage. The default one is GraphSage, and can be set via '--model'.
 
 ## GraphSMOTE
 ### Train
