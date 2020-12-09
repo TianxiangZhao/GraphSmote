@@ -43,11 +43,10 @@ Pretrained model can be found in the corresponding checkpoint folder. Rename and
 
 
 ### Baselines
-We provide five baselines in this code. They can be configured via the '--setting' arguments. Please refer to the 'get_parser()' function in utils.py.
+We provide four baselines in this code. They can be configured via the '--setting' arguments. Please refer to the 'get_parser()' function in utils.py.
 - Oringinal model: Vanilla backbone models. '--setting='no''
 - Over-sampling in raw input domain: Repeat nodes in the minority classes. '--setting='upsampling''
 - Reweight: Give samples from minority classes a larger weight when calculating the loss. '--setting='reweight''
-- SMOTE: Oversampling in raw input domain via SMOTE. '--setting='smote''.
 - Embed-SMOTE: Perform SMOTE in the intermediate embedding domain. '--setting='embed_up''
 
 Use over-sampling as an example: 
