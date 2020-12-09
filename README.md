@@ -32,12 +32,14 @@ Below is an example for the Cora dataset.
 
 ### Train
 - Pretrain the auto-encoder
-python main.py --imbalance --no-cuda --dataset=cora --setting='recon'
+
+<code>python main.py --imbalance --no-cuda --dataset=cora --setting='recon'</code>
 
 Pretrained model can be found in the corresponding checkpoint folder. Rename and set the path to pretrained checkpoint as \[dataset\]\\Pretrained.pth
 
 - Finetune
-python main.py --imbalance --no-cuda --dataset=cora --setting='newG_cls' --load=Pretrained.pth
+
+<code>python main.py --imbalance --no-cuda --dataset=cora --setting='newG_cls' --load=Pretrained.pth</code>
 
 
 ### Baselines
@@ -49,7 +51,8 @@ We provide five baselines in this code. They can be configured via the '--settin
 - Embed-SMOTE: Perform SMOTE in the intermediate embedding domain. '--setting='embed_up''
 
 Use over-sampling as an example: 
-python main.py --imbalance --no-cuda --dataset=cora --setting='upsampling'
+
+<code>python main.py --imbalance --no-cuda --dataset=cora --setting='upsampling'</code>
 
 ## Citation
 
