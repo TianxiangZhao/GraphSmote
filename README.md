@@ -19,7 +19,7 @@ Please unzip them in the 'data' folder.
 ### Architectures
 We provide two base architectures, GCN and GraphSage. The default one is GraphSage, and can be set via '--model'.
 
-### upscale ratios
+### Upscale ratios
 The default value is 1. If want to make every class balanced instead of using pre-set ratios, please set it to 0 in '--up_scale'.
 
 ### Finetuning the decoder
