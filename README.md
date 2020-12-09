@@ -45,7 +45,7 @@ We provide five baselines in this code. They can be configured via the '--settin
 - Oringinal model: Vanilla backbone models. '--setting='no''
 - Over-sampling in raw input domain: Repeat nodes in the minority classes. '--setting='upsampling''
 - Reweight: Give samples from minority classes a larger weight when calculating the loss. '--setting='reweight''
-- SMOTE: Oversampling in raw input domain via SMOTE. '--setting='smote''
+- SMOTE: Oversampling in raw input domain via SMOTE. '--setting='smote''.
 - Embed-SMOTE: Perform SMOTE in the intermediate embedding domain. '--setting='embed_up''
 
 Use over-sampling as an example: 
