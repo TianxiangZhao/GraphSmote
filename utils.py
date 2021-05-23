@@ -22,7 +22,7 @@ def get_parser():
     parser.add_argument('--dataset', type=str, default='cora')
     parser.add_argument('--size', type=int, default=100)
 
-    parser.add_argument('--epochs', type=int, default=1010,
+    parser.add_argument('--epochs', type=int, default=2010,
                 help='Number of epochs to train.')
     parser.add_argument('--lr', type=float, default=0.001)
     parser.add_argument('--weight_decay', type=float, default=5e-4)
@@ -42,7 +42,7 @@ def get_parser():
     parser.add_argument('--opt_new_G', action='store_true', default=False) # whether optimize the decoded graph based on classification result.
     parser.add_argument('--load', type=str, default=None)
     parser.add_argument('--up_scale', type=float, default=1)
-    parser.add_argument('--im_ratio', type=float, default=0.2)
+    parser.add_argument('--im_ratio', type=float, default=0.5)
     parser.add_argument('--rec_weight', type=float, default=0.000001)
     parser.add_argument('--model', type=str, default='sage', 
         choices=['sage','gcn','GAT'])
