@@ -1,5 +1,5 @@
 # GraphSmote
-Pytorch implementation of paper ['GraphSMOTE: Imbalanced Node Classification on Graphs with Graph Neural Networks']() on WSDM2021
+Pytorch implementation of paper ['GraphSMOTE: Imbalanced Node Classification on Graphs with Graph Neural Networks'](https://arxiv.org/abs/2103.08826) on WSDM2021
 
 ## Dependencies
 ### CPU
@@ -13,6 +13,7 @@ Pytorch implementation of paper ['GraphSMOTE: Imbalanced Node Classification on 
 ## Dataset
 Two processed datasets are published, including BlogCatalog and Cora. For downloading them, please [click](https://drive.google.com/drive/folders/1rfIfRPG7IlzDMAYqQ25HOQmLBCHcECQx?usp=sharing).
 Please unzip them in the 'data' folder.
+The twitter dataset is obtained from [link](https://github.com/Kagandi/anomalous-vertices-detection/tree/master/data).
 
 ## Configurations
 
