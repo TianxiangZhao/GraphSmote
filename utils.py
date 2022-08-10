@@ -272,7 +272,7 @@ def src_smote(adj,features,labels,idx_train, portion=1.0, im_class_num=3):
             new_chosen = new_chosen[:num]
 
             chosen_embed = features[new_chosen,:]
-            distance = squareform(pdist(chosen_embed.detach()))
+            distance = squareform(pdist(chosen_embed.cpu().detach()))
             np.fill_diagonal(distance,distance.max()+100)
 
             idx_neighbor = distance.argmin(axis=-1)
@@ -291,7 +291,7 @@ def src_smote(adj,features,labels,idx_train, portion=1.0, im_class_num=3):
         new_chosen = new_chosen[:num]
 
         chosen_embed = features[new_chosen,:]
-        distance = squareform(pdist(chosen_embed.detach()))
+        distance = squareform(pdist(chosen_embed.cpu().detach()))
         np.fill_diagonal(distance,distance.max()+100)
 
         idx_neighbor = distance.argmin(axis=-1)
@@ -346,7 +346,7 @@ def recon_upsample(embed, labels, idx_train, adj=None, portion=1.0, im_class_num
             chosen = chosen[:num]
 
             chosen_embed = embed[chosen,:]
-            distance = squareform(pdist(chosen_embed.detach()))
+            distance = squareform(pdist(chosen_embed.cpu().detach()))
             np.fill_diagonal(distance,distance.max()+100)
 
             idx_neighbor = distance.argmin(axis=-1)
