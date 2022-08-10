@@ -190,7 +190,7 @@ class SageConv(Module):
         """
 
         #fuse info from neighbors. to be added:
-        if not isinstance(adj, torch.sparse.FloatTensor):
+        if adj.layout != torch.sparse_coo:
             if len(adj.shape) == 3:
                 neigh_feature = torch.bmm(adj, features) / (adj.sum(dim=1).reshape((adj.shape[0], adj.shape[1],-1))+1)
             else:
