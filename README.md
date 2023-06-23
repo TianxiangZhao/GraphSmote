@@ -57,7 +57,7 @@ Use over-sampling as an example:
 ## Citation
 
 
-If any problems occurs via running this code, please contact us at tkz5084@psu.edu.
+If any problems occur via running this code, please contact us at tkz5084@psu.edu.
 
 Thank you!
 
