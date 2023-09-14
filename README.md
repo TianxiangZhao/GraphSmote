@@ -13,7 +13,8 @@ Pytorch implementation of paper ['GraphSMOTE: Imbalanced Node Classification on 
 ## Dataset
 Two processed datasets are published, including BlogCatalog and Cora. For downloading them, please [click](https://drive.google.com/drive/folders/1rfIfRPG7IlzDMAYqQ25HOQmLBCHcECQx?usp=sharing).
 Please unzip them in the 'data' folder.
-The twitter dataset is obtained from [link](https://github.com/Kagandi/anomalous-vertices-detection/tree/master/data), with [fake id](https://drive.google.com/file/d/1ti1VepCiMQk19mkg0WsYTWznTQfIm3X2/view?usp=sharing).
+
+The twitter dataset is obtained from [link](https://github.com/Kagandi/anomalous-vertices-detection/tree/master/data), with [fake id](https://drive.google.com/file/d/1ti1VepCiMQk19mkg0WsYTWznTQfIm3X2/view?usp=sharing). For twitter dataset, node embeddings can be generated with Deepwalk, following this [repo](https://github.com/phanein/deepwalk). Loading the twitter dataset is also provided in data_load.py.
 
 ## Configurations
 
